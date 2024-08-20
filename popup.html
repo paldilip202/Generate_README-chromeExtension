@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README Generator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>README Generator</h1>
+    <form id="readme-form">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" placeholder="Enter project name" required>
+
+        <label for="description">Project Description:</label>
+        <textarea id="description" placeholder="Enter project description"></textarea>
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" placeholder="Enter version">
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter author">
+
+        <label for="features">Features:</label>
+        <textarea id="features" placeholder="Enter features"></textarea>
+
+        <label for="installation">Installation Instructions:</label>
+        <textarea id="installation" placeholder="Enter installation instructions"></textarea>
+
+        <label for="usage">Usage Information:</label>
+        <textarea id="usage" placeholder="Enter usage information"></textarea>
+
+        <label for="contributing">Contributing Guidelines:</label>
+        <textarea id="contributing" placeholder="Enter contributing guidelines"></textarea>
+
+        <label for="acknowledgements">Acknowledgements:</label>
+        <textarea id="acknowledgements" placeholder="Enter acknowledgements"></textarea>
+
+        <label for="license">License:</label>
+        <textarea id="license" placeholder="Enter license information"></textarea>
+
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" placeholder="Enter tags separated by commas">
+
+        <label for="imageUpload">Upload Project Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <label for="videoUpload">Upload Project Video:</label>
+        <input type="file" id="videoUpload" accept="video/*">
+
+        <button type="submit">Generate README.md</button>
+        <div id="error-message" class="error"></div>
+    </form>
+
+    <script src="popup.js"></script>
+</body>
+</html>
